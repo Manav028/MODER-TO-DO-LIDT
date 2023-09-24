@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="section">
+      <div class="search-sec">
+        <i class="fa-solid fa-bars"></i>
+        <input class="search-bar" type="text" placeholder="Add a new task" />
+      </div>
 
-        <div class="search-sec">
-            <i class="fa-solid fa-bars"></i>
-            <input class="search-bar" type="text" placeholder="Add a new task">
-        </div>
+      <div class="option-section flex">
+        <ul class="flex">
+          <li>All</li>
+          <li>Pending</li>
+          <li>Completed</li>
+        </ul>
+        <button class="reset" type="reset">Clear All</button>
+      </div>
 
-        <div class="option-section flex">
-            <ul class="flex">
-                <li> All </li>
-                <li> Pending </li>
-                <li> Completed </li>
-            </ul>
-            <button type="reset"> Clear All </button>
-        </div>
+      <div class="list-task">
+        <ul class="list-task-ul">
 
-        <div class="list-task">
-            <ul>
-                <li> manav </li>
-                <li> manav </li>
-                <li> manav </li>
-            </ul>
-        </div>
+          <li class="list-task-li flex">
+            <label for="1" class="flex">
+              <input type="checkbox" id="1" />
+              <p>manav</p>
+            </label>
+            <div class="list-setting flex">
+              <i class="fa-solid fa-ellipsis"></i>
+              <ul class="list-setting-section">
+                <li class="flex">
+                  <i class="fa-solid fa-pen"></i>
+                  <p>Edit</p>
+                </li>
 
+                <li class="flex">
+                  <i class="fa-solid fa-trash"></i>
+                  <p>Delete</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="list-task-li flex">
+            <label for="2" class="flex">
+              <input type="checkbox" id="2" />
+              <p>manav is a bad boy for this world.... .............</p>
+            </label>
+            <div class="list-setting flex">
+              <i class="fa-solid fa-ellipsis"></i>
+              <ul class="list-setting-section">
+                <li class="flex">
+                  <i class="fa-solid fa-pen"></i>
+                  <p>Edit</p>
+                </li>
+
+                <li class="flex">
+                  <i class="fa-solid fa-trash"></i>
+                  <p>Delete</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
     </div>
-</body>
 
+    <script src="index.js"> </script>
+
+  </body>
 </html>

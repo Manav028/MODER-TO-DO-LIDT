@@ -9,6 +9,9 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
 /*Usabilty claas*/
@@ -19,9 +22,11 @@ body{
 }
 
 .section{
+    margin-top: 60px;
     width: 350px;
     background-color: white; 
     padding: 20px 20px;
+    border-radius: 5px;
 }
 
 .search-sec{
@@ -55,6 +60,7 @@ body{
 }
 
 .option-section ul li:hover{
+    cursor: pointer;
     color: skyblue;
 }
 
@@ -67,14 +73,72 @@ body{
     font-size: 17px;
 }
 
+.reset{
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.reset:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+}
+
 .list-task{
     width: 100%;
 }
 
-.list-task ul li{
-    margin: 0px 30px;
-    width: 80%;
+.list-task-li{
+    width: 100%;
     list-style: none;
     padding: 15px 0px;
     border-bottom: 1px solid grey;
 }
+
+.list-task-li label{
+    width: 90%;
+    justify-content: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.list-setting{
+    width: 10%;
+    position: relative;
+}
+
+.list-setting i{
+    cursor: pointer;
+}
+
+.list-setting-section{
+    position: absolute;
+    top: -5px;
+    padding: 5px 0px;
+    right: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0,0,6px,0.15);
+    border-radius: 5px;
+    z-index: 2;
+    transform: scale(0);    
+    transition: all ease 0.4s;
+}   
+
+.list-setting:hover .list-setting-section{
+    transform: scale(1);
+}
+
+.list-setting-section li{
+    height: 25px;
+    justify-content: flex-start!important;
+    margin-bottom: 2px;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.list-setting-section li:hover{
+    background-color: #f5f5f5;
+}
+
+.list-setting-section li i{
+    padding-right: 8px;
+}
+
